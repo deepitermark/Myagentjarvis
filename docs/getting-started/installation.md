@@ -248,16 +248,16 @@ jarvis init          # detect hardware, write a matching config
 
 ### Recommended configurations
 
-| System RAM | GPU VRAM | Default model | Download |
-|------------|----------|---------------|----------|
-| 8 GB | Up to 8 GB | `qwen3.5:2b` | ~1.1 GB |
-| 16 GB | 12–16 GB | `qwen3.5:4b` | ~2.2 GB |
-| 32 GB | 24–32 GB | `qwen3.5:9b` | ~5.0 GB |
-| 64 GB or more | 48 GB or more | `qwen3.5:27b` | ~14.9 GB |
+| System RAM (no GPU) | GPU VRAM | Default model | Download |
+|---------------------|----------|---------------|----------|
+| 5–14 GB | Up to 8 GB | `qwen3.5:2b` | ~1.1 GB |
+| 15–24 GB | 9–17 GB | `qwen3.5:4b` | ~2.2 GB |
+| 25–44 GB | 18–35 GB | `qwen3.5:9b` | ~5.0 GB |
+| 45 GB or more | 36 GB or more | `qwen3.5:27b` | ~14.9 GB |
 
-The GPU and RAM columns are alternatives, not requirements to satisfy together —
-when a GPU with usable VRAM is detected the model is sized against VRAM, otherwise
-against system RAM.
+The two memory columns are alternatives, not requirements to satisfy together: when
+a GPU reporting VRAM is detected the model is sized against VRAM, otherwise against
+system RAM.
 
 ### How the model is chosen
 
