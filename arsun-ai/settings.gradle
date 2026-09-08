@@ -1,0 +1,21 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "arsun-ai"
+include(":app")
+
+rootProject.projectDir = file(".")
+project(":app").projectDir = file("app")
+
+// Arsun AI is intentionally kept as a standalone Android module inside the source repository.
