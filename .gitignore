@@ -131,3 +131,7 @@ learning.db
 minion_logs/
 *.oj-debug.json
 oj-debug.*.json
+
+# Android build outputs
+arsun-ai/.gradle/
+arsun-ai/app/build/
